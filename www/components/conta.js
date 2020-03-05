@@ -3,7 +3,14 @@ $(document).on("click","#calcular",function(){
   var valor2=$("#valor2").val();
   var valor3=$("#valor3").val();
 
-  var result=(valor1*valor2)/valor3;
+  var result=(valor2*valor3)/valor1;
 
   $("#valor4").val(result);
+});
+
+$(document).on("click","#limpar",function(){
+  $("#valor1").val("");
+  $("#valor2").val("");
+  $("#valor3").val("");
+  $("#valor4").val("");
 });
